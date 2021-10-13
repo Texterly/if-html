@@ -92,22 +92,22 @@
 </table>
 <p></p>
 <form action="/" method="get">
-    <fieldset style="width: 50%">
+    <fieldset>
         <legend>My first form</legend>
-        <div><label for="name">Name</label></div>
-        <div><input id="name" type="text" value="Name" required></div>
-        <div>Email</div>
-        <div><input type="email" required></div>
-        <div>Password</div>
-        <div><input type="password" required></div>
-        <div>Your programming level</div>
-        <div><input type="range" min="1" max="10"></div>
+        <div><label for="name-id">Name</label></div>
+        <div><input id="name-id" type="text" placeholder="Name" name="name" required></div>
+        <div><label for="Email-id">Email</label></div>
+        <div><input id="Email-id" type="email" name="email" required></div>
+        <div><label for="password-id">Password</label></div>
+        <div><input id="password-id" type="password" name="password" required></div>
+        <div><label for="range-id">Your programming level</label></div>
+        <div><input id="range-id" type="range" min="1" max="10" name="level"></div>
         <p>What does HTML stand for?</p>
-        <div><input id="check1" type="checkbox" value="Hyperlinks and Text Markup Language"><label for="check1">Hyperlinks
+        <div><input name="html" id="check1" type="checkbox" value="Hyperlinks and Text Markup Language"><label for="check1">Hyperlinks
             and Text Markup Language</label></div>
-        <div><input id="check2" type="checkbox" value="Home Tool Markup Language"><label for="check2">Home Tool Markup
+        <div><input name="html" id="check2" type="checkbox" value="Home Tool Markup Language"><label for="check2">Home Tool Markup
             Language</label></div>
-        <div><input id="check3" type="checkbox" value="Hyper Tool Markup Language"><label for="check3">Hyper Tool Markup
+        <div><input name="html" id="check3" type="checkbox" value="Hyper Tool Markup Language"><label for="check3">Hyper Tool Markup
             Language</label></div>
         <p>What does HTTP stand for?</p>
         <div><input name="Hyper Text Transfer Protocol" type="radio" value="Hyper Text Transfer Protocol">Hyper Text
@@ -121,21 +121,17 @@
         </div>
         <p></p>
         <div>Comment</div>
-        <div>
-            <textarea name="Comment" cols="30" rows="3" maxlength="500">
-
-            </textarea>
-        </div>
+        <div><textarea name="Comment" cols="30" rows="3" maxlength="500" placeholder="Comment"></textarea></div>
         <p>What does HTML stand for?</p>
         <p>
-            <select>
+            <select name="HTML">
                 <option disabled selected>Your answer</option>
                 <option value="t1">Hyperlinks and Text Markup Language</option>
                 <option value="t2">Home Tool Markup Language</option>
                 <option value="t3">Hyper Tool Markup Language</option>
             </select>
         </p>
-        <button type="submit">Send</button>
+        <p><button type="submit">Send</button></p>
     </fieldset>
 </form>
 </body>
