@@ -6,8 +6,9 @@
 }
 
 .body {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     height: 570px;
+    width: 1440px;
 }
 
 hr {
@@ -36,11 +37,6 @@ hr {
     align-items: center;
 }
 
-.header-text p {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 40px;
-}
-
 .row {
     display: flex;
     justify-content: center;
@@ -59,8 +55,116 @@ hr {
 }
 
 .text {
-    margin-top: 48px;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
 }
 
+.container {
+    width: 1440px;
+    height: 828px;
+    background-color: #EAF0F9;
+}
+
+.container-text {
+    display: flex;
+    justify-content: center;
+}
+
+.container-text p {
+    width: 364px;
+    height: 50px;
+    margin-top: 120px;
+    margin-bottom: 104px;
+}
+
+.homes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 104px 0 104px;
+}
+
+.container-blocks .text {
+    color: #3077C6;
+    margin-top: 24px;
+}
+
+.container-blocks .text-grey {
+    color: #BFBFBF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+.homes-button {
+
+}
+
+.arrow {
+    filter: drop-shadow(3px 3px 3px #383838);
+    position: relative;
+    bottom: 309px;
+    left: 1316px;
+}
+
+.destinations {
+    width: 1440px;
+    height: 958px;
+}
+
+.destinations-header {
+    display: flex;
+    justify-content: center;
+}
+
+.destinations-header p {
+    width: 388px;
+    height: 45px;
+    margin-top: 120px;
+    margin-bottom: 104px;
+
+}
+
+.text-primary  {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 40px;
+}
+
+.tabs {
+    width: 622px;
+    height: 64px;
+    margin-left: 104px;
+}
+
+.regions {
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 104px 0 104px;
+}
+
+.regions-block p {
+    color: #3077C6;
+    margin-bottom: 48px;
+}
+
+.regions-arrow {
+    width: 50px;
+    height: 40px;
+    position: relative;
+    left: 695px;
+}
+
+.regions-button {
+    width: 128px;
+    height: 48px;
+    position: relative;
+    bottom: 296px;
+    left: 188px;
+}
+
+.backMaldives {
+    position: relative;
+    width: 295px;
+    height: 295px;
+    left: 104px;
+    bottom: 465px;
+}
