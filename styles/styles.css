@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -168,3 +173,213 @@ hr {
     left: 104px;
     bottom: 465px;
 }
+
+.dark {
+    background-color: rgba(56,56,56, .4);
+    /*opacity: 0.4;*/
+}
+
+.sign_up {
+    width: 1232px;
+    height: 200px;
+    background-color: #EAF0F9;
+    align-items: center;
+    margin-left: 104px;
+    border: #000000 solid 1px;
+    filter: drop-shadow(1px 1px 1px #383838);
+}
+
+.sign_up-box {
+    display: flex;
+}
+
+.sign_up-user {
+    margin: 57px 0 0 24px;
+    width: 86px;
+    height: 86px;
+}
+
+.sign_up-box div {
+    margin: 51px 0 0 24px;
+}
+
+.sign_up-button {
+    margin-top: 21px;
+}
+
+.sign_up-close {
+    width: 26px;
+    height: 26px;
+    margin: 24px 24px 150px 599px;
+}
+
+.reviews {
+    width: 1440px;
+    height: 1161px;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 104px;
+}
+
+.reviews-section {
+    width: 400px;
+    height: 760px;
+    background-color: #EAF0F9;
+}
+
+.reviews-image {;
+    width: 400px;
+    height: 400px;
+}
+
+.reviews-image .image {
+    position: absolute;
+    z-index: 1;
+}
+
+.reviews-image .back {
+    position: relative;
+    width: 400px;
+    height: 48px;
+    z-index: 2;
+    top: 356px;
+}
+
+.reviews-image p {
+    position: relative;
+    top: 316px;
+    left: 24px;
+    z-index: 3;
+}
+
+.text-price {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.text-price1 {
+    margin: 24px 0 0 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #3077C6;
+}
+
+.reviews-score {
+    display: flex;
+}
+
+.reviews-score .text {
+    font-size: 18px;
+    color: #3077C6;
+    margin: 16px 0 0 24px;
+}
+
+.score {
+    margin: 24px 0 0 90px;
+}
+
+.person {
+    display: flex;
+}
+
+.person img {
+    margin: 24px 16px 17px 24px;
+}
+
+.person-text1 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 31px 0 0 16px;
+}
+
+.person-text2 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #BFBFBF;
+    margin: 8px 0 0 16px;
+}
+
+.reviews-description {
+    width: 352px;
+    height: 105px;
+    margin: 17px 24px 0 24px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.reviews-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 104px;
+}
+
+.footer {
+    width: 1440px;
+    height: 630px;
+    background-color: #10367C;
+}
+
+.footer-navigation {
+    background-color: #10367C;
+    display: flex;
+}
+
+.about {
+    width: 193px;
+    height: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 104px;
+    position: relative;
+    top: 120px;
+}
+
+.footer-prText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.footer-Text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.property {
+    width: 133px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 223px;
+    position: relative;
+    top: 120px;
+}
+
+.support {
+    width: 233px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 282px;
+    position: relative;
+    top: 120px;
+}
+
+.footer-copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 198px 0 0 104px;
+    position: relative;
+
+}
+
