@@ -68,10 +68,9 @@ hr {
 }
 
 .container {
-    /*width: 1440px;*/
-    /*height: 828px;*/
+    width: 1440px;
+    height: 828px;
     background-color: #EAF0F9;
-    position: static;
 }
 
 
@@ -86,7 +85,8 @@ hr {
     display: flex;
     justify-content: space-between;
     margin-top: 104px ;
-    padding: 0 104px 120px 104px;
+    padding: 0 104px;
+    margin-bottom: 120px;
 }
 
 .container-blocks .text {
@@ -103,13 +103,14 @@ hr {
 
 .arrow {
     filter: drop-shadow(3px 3px 3px #383838);
-    position: absolute;
-    bottom: 18px;
+    position: relative;
+    bottom: 304px;
     left: 1314px;
 }
 
 .destinations {
-
+    width: 1440px;
+    height: 958px;
 }
 
 .destinations-header p {
@@ -142,7 +143,7 @@ hr {
 
 .regions-block p {
     color: #3077C6;
-    margin-top: 18px;
+    margin-top: 22px;
     margin-bottom: 48px;
 }
 
@@ -151,14 +152,13 @@ hr {
     height: 40px;
     position: relative;
     left: 695px;
-    padding-bottom: 112px;
 }
 
 .regions-button {
     width: 128px;
     height: 48px;
     position: relative;
-    bottom: 384px;
+    bottom: 316px;
     left: 188px;
 }
 
@@ -183,12 +183,12 @@ hr {
 
 .sign_up {
     width: 1232px;
+    height: 200px;
     background-color: #EAF0F9;
     align-items: center;
     margin-left: 104px;
     border: #000000 solid 1px;
     filter: drop-shadow(1px 1px 1px #383838);
-
 }
 
 .sign_up-box {
@@ -216,11 +216,8 @@ hr {
 }
 
 .reviews {
-
-}
-
-.reviews-content {
-    padding-bottom: 120px;
+    width: 1440px;
+    height: 1161px;
 }
 
 .reviews-section {
@@ -323,6 +320,8 @@ hr {
 }
 
 .footer {
+    width: 1440px;
+    height: 630px;
     background-color: #10367C;
 }
 
@@ -333,6 +332,15 @@ hr {
 
 .footer-navigation ul :first-child {
     font-weight: 500;
+}
+
+.footer-copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 64px 0 0 104px;
+    position: relative;
+
 }
 
 .about {
@@ -381,13 +389,4 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     height: 122px;
-}
-
-.footer-copyright {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    color: #FFFFFF;
-    margin: 64px 0 0 104px;
-    position: relative;
-    padding-bottom: 120px;
 }
