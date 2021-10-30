@@ -15,9 +15,14 @@ body {
 
 .header {
     height: 100vh;
-    background-image: url("../images/castelmezzano.png");
-    max-width: 1440px;
-    margin: 0 auto;
+    /*background-image: url("../images/castelmezzano.png");*/
+    background: url("../images/castelmezzano.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 900px;
+    /*max-width: 1440px;*/
+    /*margin: 0 auto;*/
 }
 
 .triphouse{
@@ -118,11 +123,16 @@ body {
 }
 
 .section {
-    padding: 120px 280px;
+    padding: 120px 104px;
 }
 
 .whatoffer {
     background-color: #FFFFFF;
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: content-box;
+
 }
 
 hr {
@@ -150,8 +160,6 @@ hr {
     justify-content: space-between;
     margin-top: 80px;
     /*padding: 0 104px;*/
-    align-items: center;
-
 }
 
 .block {
@@ -175,10 +183,17 @@ hr {
 }
 
 .container {
-    /*width: 1440px;*/
-    /*height: 828px;*/
     background-color: #EAF0F9;
-    position: static;
+    max-width: 1232px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.container-back {
+    background-color: #EAF0F9;
+    max-width: 1440px;
+    max-height: 828px;
+    margin: 0 auto;
 }
 
 .homes {
@@ -189,7 +204,7 @@ hr {
 
 .container-blocks .text {
     color: #3077C6;
-    margin-top: 22px;
+    margin-top: 24px;
 }
 
 .container-blocks .text-grey {
@@ -203,11 +218,14 @@ hr {
     filter: drop-shadow(3px 3px 3px #383838);
     position: relative;
     bottom: 302px;
-    left: 1254px;
+    left: 1210px;
 }
 
 .destinations {
-
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: content-box;
 }
 
 .destinations-header p {
@@ -280,10 +298,11 @@ hr {
 }
 
 .sign_up {
-    width: 1232px;
+    max-width: 1232px;
+    margin: 0 auto;
+    box-sizing: content-box;
     background-color: #EAF0F9;
-    align-items: center;
-    margin: 42px 0 0 280px;
+    margin-top: 44px;
     border: #000000 solid 1px;
     filter: drop-shadow(1px 1px 1px #383838);
 
@@ -315,6 +334,10 @@ hr {
 
 .reviews {
     position: relative;
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: content-box;
 }
 
 .reviews-section {
@@ -416,7 +439,7 @@ hr {
 }
 
 .reviews-arrow {
-    right: -24px;
+    right: -10px;
     top: 339px;
     position: absolute;
     z-index: 3;
@@ -424,8 +447,11 @@ hr {
 }
 
 .footer {
-    padding: 0 176px;
     position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: content-box;
 }
 
 .footer-navigation {
