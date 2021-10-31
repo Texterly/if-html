@@ -7,19 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>lesson-5</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="header">
+    <div class="header-background">
+
+    <div class="section-header">
     <div class="triphouse">
         <div>
             <img src="./images/logo_vector.png" alt="logo">
         </div>
         <div class="triphouse-right">
-            <div class="triphouser">
+            <div class="nav-link">
                 <div class="triphouse-text"><p>Stays</p></div>
                 <div class="triphouse-text"><p>Attractions</p></div>
             </div>
-            <div class="triphouser">
+            <div class="nav-picture">
                 <div><img src="./images/Night.png" alt="night"></div>
                 <div><img src="./images/AccountCircle.png" alt="AccCircle"></div>
             </div>
@@ -31,23 +35,42 @@
                 to live, work or just relax
             </p>
         </div>
-        <div class="header-search">
-                <div class="header-city">
-                    <form action="">
-                        <label for="city"></label>
-                        <input type="text" id="city" name="city" required placeholder="Your destination or hotel name">
-                    </form>
+        <form class="main-header-form">
+            <div class="form-block">
+                <div class="labels-block">
+                    <label for="input-destination">Your destination or hotel name</label>
                 </div>
-                <div class="header-calendar">
-                    <p>Check-in — Check-out</p>
+                <div>
+                    <input type="text" class="input-destination" name="destination" id="input-destination">
                 </div>
-                <div class="header-age">
-                    <p>2 Adults — 0 Children — 1 Room</p>
+            </div>
+            <div class="form-block">
+                <div class="labels-block">
+                    <label class="in" for="input-check-in">check-in</label>
+                    <span>-</span>
+                    <label class="out" for="input-check-out">check-out</label>
                 </div>
-                <div class="header-button">
-                    <img src="./images/button.png" alt="button">
+                <div class="inputs-block">
+                    <input type="text" class="input-date" name="date" id="input-check-in" value="check-in date">
+                    <input type="text" class="input-date" name="date" id="input-check-out" value="check-out date">
                 </div>
-        </div>
+            </div>
+            <div class="form-block">
+                <div class="labels-block">
+                    <label for="input-adults">Adults</label>
+                    <span>-</span>
+                    <label for="input-children">Children</label>
+                    <span>-</span>
+                    <label for="input-rooms">Rooms</label>
+                </div>
+                <div class="inputs-block">
+                    <input type="text" class="input-human-group" name="adults" id="input-adults">
+                    <input type="text" class="input-human-group" name="children" id="input-children">
+                    <input type="text" class="input-rooms" name="rooms" id="input-rooms">
+                    <button class="main-header-form-btn">Search</button>
+                </div>
+            </div>
+        </form>
         <div class="header-apps">
             <div>
                 <img src="./images/google-play-badge.png" alt="google">
@@ -57,11 +80,13 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
 </div>
-
+<!--What offer-->
 <div class="section">
     <div class="whatoffer">
-        <div>
+        <div class="col-m-6">
             <div class="header-text">
                 <p class="text-primary">What do we offer</p>
             </div>
@@ -69,7 +94,7 @@
         <div>
             <hr>
         </div>
-        <div class="row">
+        <div class="row col-m-4 col-14">
             <div class="block">
                 <img src="./images/Support.png" alt="support">
                 <p class="text">Support 24/7</p>
@@ -135,8 +160,9 @@
         </div>
         <div class="regions">
             <div class="regions-block">
-                <div class="dark">
+                <div class="maldives">
                     <img src="./images/maldives.png" alt="Maldives">
+                    <div class="dark"></div>
                 </div>
                 <p class="text">Maldives</p>
                 <div class="regions-button">
