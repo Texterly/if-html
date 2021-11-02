@@ -35,40 +35,15 @@
                 to live, work or just relax
             </p>
         </div>
-        <form class="main-header-form">
-            <div class="form-block">
-                <div class="labels-block">
-                    <label for="input-destination">Your destination or hotel name</label>
-                </div>
-                <div>
-                    <input type="text" class="input-destination" name="destination" id="input-destination">
-                </div>
+        <form action="" class="top-form">
+            <div class="city-field">
+                <input id="city-input" class="city-input" type="text" required>
+                <label class="city-label" for="city-input">Your destination or hotel name</label>
             </div>
-            <div class="form-block">
-                <div class="labels-block">
-                    <label class="in" for="input-check-in">check-in</label>
-                    <span>-</span>
-                    <label class="out" for="input-check-out">check-out</label>
-                </div>
-                <div class="inputs-block">
-                    <input type="text" class="input-date" name="date" id="input-check-in" value="check-in date">
-                    <input type="text" class="input-date" name="date" id="input-check-out" value="check-out date">
-                </div>
-            </div>
-            <div class="form-block">
-                <div class="labels-block">
-                    <label for="input-adults">Adults</label>
-                    <span>-</span>
-                    <label for="input-children">Children</label>
-                    <span>-</span>
-                    <label for="input-rooms">Rooms</label>
-                </div>
-                <div class="inputs-block">
-                    <input type="text" class="input-human-group" name="adults" id="input-adults">
-                    <input type="text" class="input-human-group" name="children" id="input-children">
-                    <input type="text" class="input-rooms" name="rooms" id="input-rooms">
-                    <button class="main-header-form-btn">Search</button>
-                </div>
+            <div class="button-container">
+                <div class="calendar">Tue 15 Sept - Sat 19 Sept</div>
+                <div class="adults">2 Adults - 0 Children - 1 Room</div>
+                <button type="submit" class="search-button">Search</button>
             </div>
         </form>
         <div class="header-apps">
@@ -83,7 +58,6 @@
     </div>
     </div>
 </div>
-<!--What offer-->
 <div class="section1">
     <div class="whatoffer">
         <div>
@@ -298,7 +272,6 @@
         </div>
     </div>
 </div>
-<!--footer-->
     <div class="footer">
         <div class="footer-logo">
             <img src="./images/logo_vector_footer.png" alt="logo">

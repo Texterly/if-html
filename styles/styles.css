@@ -116,86 +116,73 @@ body {
     margin-left: 14px;
 }
 
-.main-header-form {
-    background-color: #FFFFFF;
-    display: flex;
-    border-radius: 5px;
-    max-width: 1232px;
-    max-height: 64px;
+.top-form {
+    position: relative;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 112px;
     margin-top: 145px;
-    margin-bottom: 114px;
+}
+
+.city-field {
+    position: relative;
     border: 3px solid #F3F3F4;
-}
-
-.form-block:nth-child(1) {
-    width: 38%;
-    position: relative;
-    display: flex;
-
-}
-
-.form-block:nth-child(1) .labels-block {
-    position: absolute ;
-    left: 24px;
-    top: 24px;
-}
-
-.form-block:nth-child(2) {
-    width: 21%;
-    position: relative;
-}
-
-.form-block:nth-child(2) .labels-block {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-}
-
-.form-block:nth-child(3) {
-    width: 25.48%;
-    position: relative;
-}
-
-.form-block:nth-child(3) .labels-block {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-}
-
-.main-header-form-btn {
-    background-color: #3077C6;
-    border-radius: 5px;
-    width: 192px;
     height: 64px;
-    position: absolute;
-    bottom: -3px;
-    right: -194px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    color: #FFFFFF;
+    border-radius: 8px;
+    background: #FFFFFF;
 }
 
-.inputs-block {
-
+.city-input {
+    height: 100%;
+    width: 467px;
+    outline: none;
+    border: none;
+}
+.calendar {
+    color: #000000;
+    border: 1px solid #F3F3F4;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    min-width: 259px;
 }
 
-.inputs-block input {
-    overflow: hidden;
-    /*width: 100%;*/
-    display: block;
-
-}
-
-.labels-block {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+.adults {
     color: #000000;
+    border: 1px solid #F3F3F4;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 314px;
 }
 
+.search-button {
+    background-color: #3077C6;
+    border-radius: 5px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    width: 192px;
+    height: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    max-height: 64px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    align-items: center;
+}
 
 .header-apps {
     display: flex;
