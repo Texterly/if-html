@@ -267,7 +267,7 @@ hr {
 
 .container-back {
     background-color: #EAF0F9;
-    max-width: 1440px;
+    /*max-width: 1440px;*/
     max-height: 828px;
     margin: 0 auto;
 }
@@ -522,10 +522,11 @@ hr {
 
 .footer {
     position: relative;
-    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 16px;
     box-sizing: content-box;
+    background-color: #10367C;
+    min-height: 630px;
+    padding: 120px 242px 0 104px;
 }
 
 .footer-logo {
@@ -533,9 +534,12 @@ hr {
 }
 
 .footer-navigation {
-    background-color: #10367C;
     display: flex;
     padding-bottom: 200px;
+    max-width: 1064px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 68px;
 }
 
 .footer-navigation ul :first-child {
@@ -543,7 +547,8 @@ hr {
 }
 
 .about {
-    padding: 120px 0 0 64px;
+    width: 39%;
+    position: relative;
 }
 
 .about ul{
@@ -559,7 +564,7 @@ hr {
 }
 
 .property {
-    padding: 120px 0 0 184px;
+    width: 39%;
 }
 
 .property ul{
@@ -575,7 +580,7 @@ hr {
 }
 
 .support {
-    padding: 120px 0 0 242px;
+    width: 21.89%;
 }
 
 .support ul{
@@ -588,16 +593,16 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     height: 122px;
+    width: 282px;
 }
 
 .footer-copyright {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #FFFFFF;
-    margin: 64px 0 0 104px;
     position: absolute;
-    padding-bottom: 120px;
-    bottom: 2px;
+    bottom: -80px;
+    left: 38px;
 }
 
 @media only screen and (max-width: 600px){
