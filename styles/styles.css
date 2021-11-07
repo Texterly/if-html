@@ -212,33 +212,30 @@ body {
     margin: 0 auto;
     padding: 0 16px;
     box-sizing: content-box;
-
 }
 
-hr {
-    color: #F5BD41;
+.header-text:hover:after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    background: #F5BD41;
     height: 4px;
-    background-color: #F5BD41;
-    border: none;
     width: 100px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 20px;
+    margin: 0 auto;
 }
-
 
 .header-text {
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 102px;
 }
 
 .block {
