@@ -24,10 +24,11 @@ body {
     background: url("../images/castelmezzano.png") center no-repeat;
     background-size: cover;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    max-height: 900px;
+    /*max-height: 900px;*/
     margin: 0 auto;
+    height: 100%;
 }
 
 .header-background {
@@ -98,6 +99,10 @@ body {
     padding-left: 24px;
 }
 
+.nav-picture-menu {
+    display: none;
+}
+
 .header-page {
     /*padding: 196px 104px 120px 104px;*/
     padding-top: 196px;
@@ -147,12 +152,13 @@ body {
     color: #000000;
     border: 1px solid #F3F3F4;
     height: 100%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 259px;
+    /*min-width: 259px;*/
+    width: 34%;
 }
 
 .adults {
@@ -163,7 +169,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 314px;
+    /*min-width: 314px;*/
+    width: 41%;
 }
 
 .search-button {
@@ -173,8 +180,9 @@ body {
     font-size: 24px;
     font-weight: 400;
     color: #FFFFFF;
-    width: 192px;
+    /*width: 192px;*/
     height: 100%;
+    width: 25%;
 }
 
 .button-container {
@@ -186,6 +194,8 @@ body {
     right: 0;
     height: 100%;
     align-items: center;
+    width: 100%;
+    max-width: 765px;
 }
 
 .header-apps {
@@ -732,6 +742,66 @@ body {
 
 
 @media only screen and (max-width: 480px){
+
+    .header {
+        /*height: auto;*/
+        min-height: 533px;
+
+    }
+
+    .triphouse {
+        max-width: 360px;
+        margin-top: 12px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .header-page {
+        padding-top: 52px;
+        max-width: 328px;
+    }
+
+    .top-form {
+        margin-top: 31px;
+    }
+
+    .header-apps {
+        margin-bottom: 40px;
+    }
+
+    .header-page p {
+        font-size: 30px;
+    }
+
+    .triphouse-logo {
+        width: 122px;
+        height: 24px;
+    }
+
+    .nav-picture-night {
+        width: 16px;
+        height: 16px;
+    }
+
+    .nav-picture-account {
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav-picture-menu {
+        display: block;
+    }
+
+    .nav-picture div {
+        padding-left: 16px;
+    }
+
+    .section-header {
+        padding: 0 0;
+    }
+
     .section1 {
         padding: 40px 73px;
         min-height: 658px;
@@ -1020,6 +1090,8 @@ body {
         width: 360px;
         height: 106px;
         background-color: #FFFFFF;
+        border: none;
+        filter: none;
     }
 
     .sign_up-user {
@@ -1057,7 +1129,7 @@ body {
     }
 
     .footer {
-        max-width: 360px;
+        /*max-width: 360px;*/
         min-height: 203px;
         background-color: #10367C;
         padding: 0 0;
@@ -1161,11 +1233,11 @@ body {
     .col-11 {width: calc(100% / var(--columns-count)*11);}
     .col-12 {width: calc(100% / var(--columns-count)*12);}
 
-    .row {
-        flex-wrap: wrap;
-        /*justify-content: center;*/
-        margin-top: 48px;
-    }
+    /*.row {*/
+    /*    flex-wrap: wrap;*/
+    /*    !*justify-content: center;*!*/
+    /*    margin-top: 48px;*/
+    /*}*/
 
     /*.whatoffer-icon:nth-child(1) {*/
     /*    margin-bottom: 14px;*/
