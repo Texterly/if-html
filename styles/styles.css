@@ -291,9 +291,12 @@ body {
     position: relative;
 }
 
+.container-blocks {
+    width: 25%;
+}
+
 .container-back {
     background-color: #EAF0F9;
-    /*max-width: 1440px;*/
     max-height: 828px;
     margin: 0 auto;
 }
@@ -326,7 +329,6 @@ body {
 .destinations {
     max-width: 1232px;
     margin: 0 auto;
-    padding: 0 16px;
     box-sizing: content-box;
 }
 
@@ -348,11 +350,58 @@ body {
     padding-top: 100px;
     padding-bottom: 64px;
     display: flex;
+    max-width: 622px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.tabs.text {
+
+}
+
+.tabs-regions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3077C6;
+    /*min-width: 192px;*/
+    min-height: 64px;
+    width: 30.87%;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.tabs-cities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3F4;
+    /*min-width: 192px;*/
+    min-height: 64px;
+    width: 30.87%;
+    border-radius: 8px;
+}
+
+.tabs-places {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3F4;
+    /*min-width: 192px;*/
+    min-height: 64px;
+    width: 38.26%;
+    border-radius: 8px;
 }
 
 .regions {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+
+.regions-block {
+    width: 25%;
 }
 
 .regions-block p {
@@ -390,7 +439,7 @@ body {
 
 .dark {
     background-color: rgba(38, 38, 38, 0.4);
-    width: 100%;
+    width: 295px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -399,16 +448,35 @@ body {
 
 .sign_up {
     max-width: 1232px;
-    margin: 42px auto 0 auto;
+    margin: 46px auto 0 auto;
     box-sizing: content-box;
     background-color: #EAF0F9;
     border: #000000 solid 1px;
     filter: drop-shadow(1px 1px 1px #383838);
-
+    order: 0;
 }
 
 .sign_up-box {
     display: flex;
+    max-width: 1232px;
+    position: relative;
+}
+
+.sign_up-box-logo {
+    width: 58px;
+    height: 58px;
+    background-color: #3077C6;
+    fill: #FFFFFF;
+    border-radius: 4px;
+    /*display: flex;*/
+    align-items: center;
+    display: none;
+}
+
+.sign_up-box-logo svg {
+    width: 53px;
+    height: 11px;
+    margin: 0 2px;
 }
 
 .sign_up-user {
@@ -417,8 +485,8 @@ body {
     height: 86px;
 }
 
-.sign_up-box div {
-    margin: 51px 0 0 24px;
+.sign_up-box-desktop {
+    margin: 48px 654px 44px 24px;
 }
 
 .sign_up-button {
@@ -426,9 +494,19 @@ body {
 }
 
 .sign_up-close {
-    width: 26px;
-    height: 26px;
-    margin: 24px 24px 150px 599px;
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    /*margin: 24px 24px 150px 599px;*/
+}
+
+.sign_up-install {
+    color: #3077C6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+
 }
 
 .reviews {
@@ -437,10 +515,13 @@ body {
     margin: 0 auto;
     padding: 0 16px;
     box-sizing: content-box;
+    width: 100%;
+    order: 1;
 }
 
 .reviews-section {
-    width: 400px;
+    /*width: 400px;*/
+    width: 33.333333%;
     height: 760px;
     background-color: #EAF0F9;
     margin-top: 114px;
@@ -506,8 +587,10 @@ body {
     display: flex;
 }
 
-.person img {
+.person svg {
     margin: 30px 16px 17px 30px;
+    width: 54px;
+    height: 54px;
 }
 
 .person-text1 {
@@ -530,6 +613,10 @@ body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+}
+
+.reviews-nav {
+    display: none;
 }
 
 .reviews-content {
@@ -630,6 +717,11 @@ body {
     left: 40px;
 }
 
+.reviews-sign_up {
+    display: flex;
+    flex-direction: column;
+}
+
 /*.whatoffer-svg {*/
 /*    background-size: 70px;*/
 /*}*/
@@ -639,7 +731,7 @@ body {
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 480px){
     .section1 {
         padding: 40px 73px;
         min-height: 658px;
@@ -754,18 +846,214 @@ body {
     .dest .section {
         padding: 40px 16px;
         max-width: 360px;
-        max-height: 354px;
+        max-height: 380px;
         margin: 0 auto;
     }
 
     .tabs {
-        padding-top: 32px;
+        padding: 32px 0 24px 0;
+        justify-content: space-between;
+        min-height: 32px;
+        font-size: 19px;
+    }
+
+    .tabs-regions {
+        min-height: 32px;
+        width: 98px;
+    }
+
+    .tabs-cities {
+        min-height: 32px;
+        width: 98px;
+    }
+
+    .tabs-places {
+        min-height: 32px;
+        width: 98px;
+    }
+
+    .tabs-places-text {
+        display: none;
+    }
+
+    .regions-block {
+        width: 156px;
+        height: 178px;
+    }
+
+    .regions-block:nth-child(3) {
+        display: none;
+    }
+
+    .regions-block:nth-child(4) {
+        display: none;
+    }
+
+    .maldives img {
+        width: 156px;
+        height: 156px;
+    }
+
+    .regions-button {
+        display: none;
+    }
+
+    .dark {
+        display: none;
+    }
+
+    .regions-block:nth-child(2) img {
+        width: 156px;
+        height: 156px;
+    }
+
+    .regions-block .text {
+        font-size: 12px;
+        margin: 8px 0 40px 0;
+    }
+
+    .sign_up {
+        order: 1;
+    }
+
+    .reviews-sign_up {
+        /*max-width: 360px;*/
+    }
+
+    .reviews {
+        order: 0;
+        padding: 0 0;
+        max-width: 326px;
+    }
+
+    .reviews-sign_up .section {
+        padding: 40px 16px;
+        background-color: #EAF0F9;
+    }
+
+    .reviews-section {
+        margin-top: 32px;
+        height: auto;
+    }
+
+    .reviews-image {
+        height: 326px;
+        width: auto;
+    }
+
+    .reviews-image img:first-of-type {
+        width: 326px;
+        height: 326px;
+    }
+
+    .reviews-image img:last-of-type {
+        display: none;
+    }
+
+    .reviews-image p {
+        display: none;
+    }
+
+    .reviews-section:nth-child(2) {
+        display: none;
+    }
+
+    .reviews-section:nth-child(3) {
+        display: none;
+    }
+
+    .reviews-score {
+        margin: 0 -2px 0 2px;
+    }
+
+    .reviews-score .text-price1 {
+        margin: 10px 0 0 0;
+        font-size: 15px;
+    }
+
+    .reviews-score .text {
+        margin: 6px 0 0 0;
+        font-size: 15px;
+    }
+
+    .score {
+        margin: 10px -4px 0 0;
+        width: 72px;
+        height: 44px;
+    }
+
+    .person svg {
+        height: 44px;
+        width: 44px;
+        margin: 10px 0 0 8px;
+    }
+
+    .person-text1 {
+        font-size: 15px;
+        margin: 14px 0 0 11px;
+    }
+
+    .person-text2 {
+        font-size: 15px;
+        margin: 0 0 0 12px;
+    }
+
+    .reviews-description {
+        font-size: 15px;
+        margin: 22px 30px 0 2px;
+        width: 327px;
+    }
+
+    .reviews-nav {
+        margin: 12px auto 0 auto;
+        max-width: 56px;
+        display: flex;
         justify-content: space-between;
     }
 
-    .tabs img {
-        max-width: 98px;
-        max-height: 32px;
+    .reviews-arrow {
+        display: none;
+    }
+
+    .sign_up {
+        margin: 0 auto;
+        width: 360px;
+        height: 106px;
+        background-color: #FFFFFF;
+    }
+
+    .sign_up-user {
+        display: none;
+    }
+
+    .sign_up-box .text {
+        font-size: 12px;
+    }
+
+    .sign_up-button {
+        display: none;
+    }
+
+    .sign_up-box-logo {
+        display: flex;
+        margin: 24px 0 0 50px;
+    }
+
+    .sign_up-box-desktop {
+        margin: 39px 16px;
+        width: 164px;
+    }
+
+    .sign_up-install {
+        display: block;
+        align-self: center;
+    }
+
+    .sign_up-close {
+        left: 18px;
+        top: 44px;
+        width: 16px;
+        height: 16px;
     }
 
     .footer {
@@ -776,9 +1064,14 @@ body {
     }
 
     .footer-logo {
-        color: #FFFFFF;
-        display: block;
-        padding: 38px 131px;
+        padding: 38px 0;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .footer-logo-svg {
+        fill: #FFFFFF;
+        margin: 0 auto;
     }
 
     .footer-navigation {
@@ -834,6 +1127,7 @@ body {
 
 }
 
+
 @media only screen and (max-width: 768px){
     /*For tablets:*/
     .col-s-1 {width: calc(100% / var(--columns-count)*1);}
@@ -849,10 +1143,7 @@ body {
     .col-s-11 {width: calc(100% / var(--columns-count)*11);}
     .col-s-12 {width: calc(100% / var(--columns-count)*12);}
 
-    .row {
-        flex-direction: column;
-        justify-content: center;
-    }
+
 }
 
 @media only screen and (max-width: 1024px){
@@ -872,6 +1163,33 @@ body {
 
     .row {
         flex-wrap: wrap;
-
+        /*justify-content: center;*/
+        margin-top: 48px;
     }
+
+    /*.whatoffer-icon:nth-child(1) {*/
+    /*    margin-bottom: 14px;*/
+    /*}*/
+
+    /*.section1 {*/
+    /*    max-height: 1000px;*/
+    /*}*/
+
+    /*.container-back {*/
+    /*    max-height: 2040px;*/
+    /*}*/
+
+    /*.homes {*/
+    /*    flex-wrap: wrap;*/
+    /*    !*justify-content: center;*!*/
+    /*    margin-top: 48px;*/
+    /*}*/
+
+    /*.container-blocks .text {*/
+    /*    margin-top: 12px;*/
+    /*}*/
+
+    /*.container-blocks .text-grey {*/
+    /*    margin: 12px 0;*/
+    /*}*/
 }
