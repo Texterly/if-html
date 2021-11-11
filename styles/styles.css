@@ -765,6 +765,7 @@ body {
 
     .top-form {
         margin-top: 31px;
+        margin-bottom: 32px;
     }
 
     .header-apps {
@@ -796,6 +797,71 @@ body {
 
     .nav-picture div {
         padding-left: 16px;
+    }
+
+    .city-field {
+        flex-direction: column;
+        height: 232px;
+        border: none;
+        border-radius: initial;
+        background-color: #F5BD41;
+        position: relative;
+    }
+
+    .city-input {
+        max-height: 48px;
+        margin: 8px 8px;
+        min-width: 312px;
+        border-radius: 4px;
+    }
+
+    .city-label {
+        color: black;
+        position: absolute;
+        left: 44px;
+        top: 23px;
+        font-size: 15px;
+    }
+
+    .city-field-button {
+        position: absolute;
+        left: 20px;
+        top: 24px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        /*background-color: #FFFFFF;*/
+        height: 160px;
+        top: 64px;
+        left: 0;
+        justify-content: normal;
+    }
+
+    .calendar {
+        min-height: 48px;
+        min-width: 312px;
+        margin: 0 8px 8px 8px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+
+    .adults {
+        min-height: 48px;
+        min-width: 312px;
+        margin: 0 8px 8px 8px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+
+    .search-button {
+        min-height: 48px;
+        min-width: 312px;
+        margin: 0 8px;
+        border-radius: 4px;
+        font-size: 19px;
     }
 
     .section-header {
