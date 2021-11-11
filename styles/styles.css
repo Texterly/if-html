@@ -99,6 +99,10 @@ body {
     padding-left: 24px;
 }
 
+.nav-picture div:nth-child(3) {
+    display: none;
+}
+
 .nav-picture-menu {
     display: none;
 }
@@ -148,6 +152,18 @@ body {
     outline: none;
     border: none;
 }
+
+.city-field-button {
+    display: none;
+}
+
+.city-label {
+    /*color: #000000;*/
+    position: absolute;
+    left: 24px;
+    top: -48px;
+}
+
 .calendar {
     color: #000000;
     border: 1px solid #F3F3F4;
@@ -824,6 +840,7 @@ body {
     }
 
     .city-field-button {
+        display: block;
         position: absolute;
         left: 20px;
         top: 24px;
