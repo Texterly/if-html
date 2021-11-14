@@ -108,14 +108,16 @@ body {
 }
 
 .header-page {
-    /*padding: 196px 104px 120px 104px;*/
     padding-top: 196px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 500;
     color: #FFFFFF;
     max-width: 1232px;
     margin: 0 auto;
+}
+
+.header-page h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
 }
 
 .header-search {
@@ -134,7 +136,7 @@ body {
     border-radius: 8px;
     font-size: 18px;
     line-height: 21px;
-    margin-bottom: 112px;
+    margin-bottom: 118px;
     margin-top: 145px;
 }
 
@@ -168,6 +170,7 @@ body {
     position: absolute;
     left: 24px;
     top: -48px;
+    font-weight: 400;
 }
 
 .calendar {
@@ -182,13 +185,69 @@ body {
     /*min-width: 259px;*/
     width: 34%;
     position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.calendar-before-date {
+    position: relative;
+    height: 100%;
+}
+
+.calendar-before-date:hover {
+    border-color: #3077C6;
+}
+
+.calendar-after-date:hover {
+    border-color: #3077C6;
+}
+
+.calendar-before-input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+.calendar-after-input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+.calendar-before-date label {
+    position: absolute;
+    top: -48px;
+    left: 20px;
+    color: #FFFFFF;
+}
+
+.calendar-hyphen {
+    color: #FFFFFF;
+    position: absolute;
+    top: -48px;
+    left: 98px;
+}
+
+.calendar-after-date label {
+    position: absolute;
+    top: -48px;
+    left: -14px;
+    color: #FFFFFF;
+}
+
+.calendar-after-date {
+    height: 100%;
+    position: relative;
 }
 
 .calendar:hover {
     border-color: #F5BD41;
 }
 
-.adults {
+.properties {
     color: #000000;
     border: 4px solid #F3F3F4;
     height: 100%;
@@ -199,8 +258,23 @@ body {
     width: 41%;
 }
 
-.adults:hover {
+.properties:hover {
     border-color: #F5BD41;
+}
+
+.properties label {
+    display: none;
+}
+
+.properties input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+.properties div {
+    height: 100%;
 }
 
 .search-button {
@@ -779,7 +853,7 @@ body {
     }
 
     .triphouse {
-        max-width: 360px;
+        max-width: 328px;
         margin-top: 12px;
     }
 
@@ -788,12 +862,12 @@ body {
     }
 
     .header-page {
-        padding-top: 52px;
+        padding-top: 48px;
         max-width: 328px;
     }
 
     .top-form {
-        margin-top: 31px;
+        margin-top: 30px;
         margin-bottom: 32px;
     }
 
@@ -801,7 +875,7 @@ body {
         margin-bottom: 40px;
     }
 
-    .header-page p {
+    .header-page h1 {
         font-size: 30px;
     }
 
@@ -846,13 +920,18 @@ body {
         margin: 8px 8px;
         min-width: 312px;
         border-radius: 4px;
+        border-color: #FFFFFF;
+    }
+
+    .city-input:hover {
+        border-color: #3077C6;
     }
 
     .city-label {
         color: black;
         position: absolute;
-        left: 44px;
-        top: 23px;
+        left: 46px;
+        top: 21px;
         font-size: 15px;
     }
 
@@ -876,18 +955,77 @@ body {
         min-height: 48px;
         min-width: 312px;
         margin: 0 8px 8px 8px;
-        background-color: #FFFFFF;
-        border-radius: 4px;
+        /*background-color: #FFFFFF;*/
+        /*border-radius: 4px;*/
         font-size: 15px;
+        border: none;
     }
 
-    .adults {
+    .calendar-hyphen {
+        display: none;
+    }
+
+    .calendar-before-date {
+        margin-right: 4px;
+        border-radius: 4px;
+        border: 4px solid #FFFFFF;
+        background-color: #FFFFFF;
+    }
+
+    .calendar-after-date {
+        margin-left: 4px;
+        border-radius: 4px;
+        border: 4px solid #FFFFFF;
+    }
+
+    .calendar-before-date label {
+        color: #000000;
+        top: -2px;
+        left: 6px;
+        font-size: 12px;
+    }
+
+    .calendar-after-date label {
+        color: #000000;
+        top: -2px;
+        left: 6px;
+        font-size: 12px;
+    }
+
+    .properties {
         min-height: 48px;
         min-width: 312px;
         margin: 0 8px 8px 8px;
-        background-color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 400;
         border-radius: 4px;
-        font-size: 15px;
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
+    }
+
+    .properties label {
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 6px;
+    }
+
+    .properties:hover {
+        border-color: #3077C6;
+    }
+
+    .adults {
+        position: relative;
+        border-right: 1px solid #BFBFBF;
+    }
+
+    .children {
+        position: relative;
+        border-right: 1px solid #BFBFBF;
+    }
+
+    .rooms {
+        position: relative;
     }
 
     .search-button {
@@ -903,8 +1041,8 @@ body {
     }
 
     .section1 {
-        padding: 40px 73px;
-        min-height: 658px;
+        padding: 24px 73px 40px 73px;
+        min-height: 640px;
         max-width: 360px;
         margin: 0 auto;
     }
@@ -1244,6 +1382,7 @@ body {
     .footer-logo-svg {
         fill: #FFFFFF;
         margin: 0 auto;
+        width: 98px;
     }
 
     .footer-navigation {

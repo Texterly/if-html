@@ -62,9 +62,9 @@
         </div>
     <div class="header-page">
         <div>
-            <p>Discover stays <br>
+            <h1>Discover stays <br>
                 to live, work or just relax
-            </p>
+            </h1>
         </div>
         <form action="" class="top-form">
             <div class="city-field">
@@ -78,8 +78,32 @@
                     </svg>
                 </div>
                 <div class="button-container">
-                    <div class="calendar">Tue 15 Sept - Sat 19 Sept</div>
-                    <div class="adults">2 Adults - 0 Children - 1 Room</div>
+                    <div class="calendar">
+                        <div class="calendar-before-date">
+                            <input id="calendar-before" class="calendar-before-input" type="text" required>
+                            <label class="calendar-label-before" for="calendar-before">Check in</label>
+                        </div>
+                        <span class="calendar-hyphen">-</span>
+                        <div class="calendar-after-date">
+                            <input id="calendar-after" class="calendar-after-input" type="text" required>
+                            <label class="calendar-label-after" for="calendar-after">Check out</label>
+                        </div>
+                    </div>
+                    <div class="properties">
+                        <div class="adults properties-border">
+                            <input id="adults" class="adults-input" type="text" required>
+                            <label class="adults-label" for="adults">Adults</label>
+                        </div>
+                        <div class="children properties-border">
+                            <input id="children" class="children-input" type="text" required>
+                            <label class="children-label" for="children">Children</label>
+                        </div>
+                        <div class="rooms properties-border">
+                            <input id="rooms" class="rooms-input" type="text" required>
+                            <label class="rooms-label" for="rooms">Rooms</label>
+                        </div>
+                    </div>
+<!--                    <div class="adults">2 Adults - 0 Children - 1 Room</div>-->
                     <button type="submit" class="search-button">Search</button>
                 </div>
             </div>
