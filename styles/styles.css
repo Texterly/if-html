@@ -820,6 +820,10 @@ body {
         height: 24px;
     }
 
+    .nav-picture div:nth-child(3) {
+        display: block;
+    }
+
     .nav-picture-menu {
         display: block;
     }
