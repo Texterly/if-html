@@ -886,6 +886,311 @@ body {
     width: 100%;
 }
 
+@media only screen and (max-width: 1024px){
+    /*For desktop:*/
+    .col-1 {width: calc(100% / var(--columns-count)*1);}
+    .col-2 {width: calc(100% / var(--columns-count)*2);}
+    .col-3 {width: calc(100% / var(--columns-count)*3);}
+    .col-4 {width: calc(100% / var(--columns-count)*4);}
+    .col-5 {width: calc(100% / var(--columns-count)*5);}
+    .col-6 {width: calc(100% / var(--columns-count)*6);}
+    .col-7 {width: calc(100% / var(--columns-count)*7);}
+    .col-8 {width: calc(100% / var(--columns-count)*8);}
+    .col-9 {width: calc(100% / var(--columns-count)*9);}
+    .col-10 {width: calc(100% / var(--columns-count)*10);}
+    .col-11 {width: calc(100% / var(--columns-count)*11);}
+    .col-12 {width: calc(100% / var(--columns-count)*12);}
+
+    .row {
+        flex-wrap: wrap;
+        /*justify-content: center;*/
+        margin-top: 48px;
+    }
+
+    .block {
+        flex-basis: auto;
+    }
+
+    .container-back {
+        max-height: 1054px;
+    }
+
+    .homes {
+        flex-wrap: wrap;
+        margin-top: 48px;
+    }
+
+    .container-blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-blocks>img {
+        width: 296px;
+        height: 296px;
+    }
+
+    .regions {
+        flex-wrap: wrap;
+    }
+
+    .regions-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .regions-block>img {
+        width: 295px;
+        height: 295px;
+    }
+
+    .regions-arrow {
+        left: -24px;
+        top: 380px;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-section {
+        max-width: 400px;
+    }
+
+    .reviews-section:nth-child(2),
+    .reviews-section:nth-child(3) {
+        display: none;
+    }
+
+    .reviews-arrow {
+        top: 520px;
+        right: 96px;
+
+    }
+}
+
+@media only screen and (max-width: 768px){
+    /*For tablets:*/
+    .col-s-1 {width: calc(100% / var(--columns-count)*1);}
+    .col-s-2 {width: calc(100% / var(--columns-count)*2);}
+    .col-s-3 {width: calc(100% / var(--columns-count)*3);}
+    .col-s-4 {width: calc(100% / var(--columns-count)*4);}
+    .col-s-5 {width: calc(100% / var(--columns-count)*5);}
+    .col-s-6 {width: calc(100% / var(--columns-count)*6);}
+    .col-s-7 {width: calc(100% / var(--columns-count)*7);}
+    .col-s-8 {width: calc(100% / var(--columns-count)*8);}
+    .col-s-9 {width: calc(100% / var(--columns-count)*9);}
+    .col-s-10 {width: calc(100% / var(--columns-count)*10);}
+    .col-s-11 {width: calc(100% / var(--columns-count)*11);}
+    .col-s-12 {width: calc(100% / var(--columns-count)*12);}
+
+    .header {
+        min-height: 540px;
+    }
+
+    .triphouse-logo {
+        width: 100px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .nav-picture-night {
+        width: 20px;
+    }
+
+    .nav-picture-account {
+        width: 30px;
+    }
+
+    .header-page {
+        padding-top: 20px;
+    }
+
+    .header-page h1 {
+        font-size: 20px;
+    }
+
+    .top-form {
+        margin: 40px 0;
+    }
+
+    .city-field {
+        height: 216px;
+    }
+
+    .city-input {
+        max-height: 50px;
+        min-width: 100%;
+    }
+
+    .button-container {
+        top: 50px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        justify-content: normal;
+    }
+
+    .calendar {
+        width: 100%;
+    }
+
+    .calendar>div {
+        height: 50px;
+    }
+
+    .properties {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .properties>div {
+        height: 50px;
+    }
+
+    .search-button {
+        width: 100%;
+        min-height: 50px;
+        font-size: 15px;
+    }
+
+    .city-label {
+        color: #000000;
+        position: absolute;
+        left: 46px;
+        top: 21px;
+        font-size: 15px;
+    }
+
+    .city-input:focus+.city-label,
+    .city-input:not(:focus):valid+.city-label{
+        top: 6px;
+        color: #000000;
+        font-size: 12px;
+    }
+
+    .calendar-before-date label {
+        color: #000000;
+        top: 24px;
+        left: 6px;
+        font-size: 15px;
+    }
+
+    .calendar-before-input:focus+.calendar-label-before,
+    .calendar-before-input:not(:focus):valid+ .calendar-label-before {
+        color: #000000;
+        top: -2px;
+        left: 6px;
+        font-size: 12px;
+    }
+
+    .calendar-after-date label {
+        color: #000000;
+        top: 24px;
+        left: 6px;
+        font-size: 15px;
+    }
+
+    .calendar-after-input:focus+.calendar-label-after,
+    .calendar-after-input:not(:focus):valid+ .calendar-label-after {
+        color: #000000;
+        top: -2px;
+        left: 6px;
+        font-size: 12px;
+    }
+
+    .adults-input:focus+.adults-label,
+    .adults-input:not(:focus):valid+.adults-label {
+        color: #000000;
+        top: -2px;
+        font-size: 12px;
+    }
+
+    .children-input:focus+.children-label,
+    .children-input:not(:focus):valid+.children-label {
+        color: #000000;
+        top: -2px;
+        font-size: 12px;
+    }
+
+    .rooms-input:focus+.rooms-label,
+    .rooms-input:not(:focus):valid+.rooms-label {
+        color: #000000;
+        top: -2px;
+        font-size: 12px;
+    }
+
+    .section1 {
+        max-height: 962px;
+    }
+
+    .container-blocks:nth-child(3),
+    .container-blocks:nth-child(4) {
+        display: none;
+    }
+
+    .regions-block:nth-child(2),
+    .regions-block:nth-child(3),
+    .regions-block:nth-child(4) {
+        display: none;
+    }
+
+    .regions-button {
+        left: 130px;
+    }
+
+    .footer-navigation ul :first-child {
+        font-weight: 500;
+        display: block;
+        font-size: 15px;
+        /*border-bottom: 1px solid rgba(255, 255, 255, 1);*/
+    }
+
+    .footer-navigation ul {
+        padding: 0 0;
+    }
+
+    .footer-navigation li {
+        display: none;
+    }
+
+    .about {
+        width: auto;
+    }
+
+    .property {
+        width: auto;
+    }
+
+
+    .support {
+        width: auto;
+    }
+
+    .support ul {
+        width: auto;
+    }
+
+    .footer {
+        padding: 40px 120px 0 120px;
+    }
+
+    .footer-copyright {
+        top: 60px;
+        left: -20px;
+    }
+
+    .footer-navigation {
+        max-height: 100px;
+    }
+}
 
 @media only screen and (max-width: 480px){
 
@@ -994,7 +1299,6 @@ body {
 
     .button-container {
         flex-direction: column;
-        /*background-color: #FFFFFF;*/
         height: 160px;
         top: 64px;
         left: 0;
@@ -1005,9 +1309,6 @@ body {
         min-height: 48px;
         min-width: 312px;
         margin: 0 8px 8px 8px;
-        /*background-color: #FFFFFF;*/
-        /*border-radius: 4px;*/
-        font-size: 15px;
         border: none;
     }
 
@@ -1020,12 +1321,14 @@ body {
         border-radius: 4px;
         border: 4px solid #FFFFFF;
         background-color: #FFFFFF;
+        margin-left: 8px;
     }
 
     .calendar-after-date {
         margin-left: 4px;
         border-radius: 4px;
         border: 4px solid #FFFFFF;
+        margin-right: 8px;
     }
 
     .calendar-before-date label {
@@ -1060,7 +1363,7 @@ body {
 
     .properties {
         min-height: 48px;
-        min-width: 312px;
+        width: auto;
         margin: 0 8px 8px 8px;
         font-size: 12px;
         font-weight: 400;
@@ -1068,13 +1371,6 @@ body {
         border-color: #FFFFFF;
         background-color: #FFFFFF;
     }
-
-    /*.properties label {*/
-    /*    display: block;*/
-    /*    position: absolute;*/
-    /*    top: -2px;*/
-    /*    left: 6px;*/
-    /*}*/
 
     .properties label {
         display: block;
@@ -1126,6 +1422,7 @@ body {
     .search-button {
         min-height: 48px;
         min-width: 312px;
+        width: auto;
         margin: 0 8px;
         border-radius: 4px;
         font-size: 19px;
@@ -1533,69 +1830,3 @@ body {
 
 }
 
-
-@media only screen and (max-width: 768px){
-    /*For tablets:*/
-    .col-s-1 {width: calc(100% / var(--columns-count)*1);}
-    .col-s-2 {width: calc(100% / var(--columns-count)*2);}
-    .col-s-3 {width: calc(100% / var(--columns-count)*3);}
-    .col-s-4 {width: calc(100% / var(--columns-count)*4);}
-    .col-s-5 {width: calc(100% / var(--columns-count)*5);}
-    .col-s-6 {width: calc(100% / var(--columns-count)*6);}
-    .col-s-7 {width: calc(100% / var(--columns-count)*7);}
-    .col-s-8 {width: calc(100% / var(--columns-count)*8);}
-    .col-s-9 {width: calc(100% / var(--columns-count)*9);}
-    .col-s-10 {width: calc(100% / var(--columns-count)*10);}
-    .col-s-11 {width: calc(100% / var(--columns-count)*11);}
-    .col-s-12 {width: calc(100% / var(--columns-count)*12);}
-
-
-}
-
-@media only screen and (max-width: 1024px){
-    /*For desktop:*/
-    .col-1 {width: calc(100% / var(--columns-count)*1);}
-    .col-2 {width: calc(100% / var(--columns-count)*2);}
-    .col-3 {width: calc(100% / var(--columns-count)*3);}
-    .col-4 {width: calc(100% / var(--columns-count)*4);}
-    .col-5 {width: calc(100% / var(--columns-count)*5);}
-    .col-6 {width: calc(100% / var(--columns-count)*6);}
-    .col-7 {width: calc(100% / var(--columns-count)*7);}
-    .col-8 {width: calc(100% / var(--columns-count)*8);}
-    .col-9 {width: calc(100% / var(--columns-count)*9);}
-    .col-10 {width: calc(100% / var(--columns-count)*10);}
-    .col-11 {width: calc(100% / var(--columns-count)*11);}
-    .col-12 {width: calc(100% / var(--columns-count)*12);}
-
-    /*.row {*/
-    /*    flex-wrap: wrap;*/
-    /*    !*justify-content: center;*!*/
-    /*    margin-top: 48px;*/
-    /*}*/
-
-    /*.whatoffer-icon:nth-child(1) {*/
-    /*    margin-bottom: 14px;*/
-    /*}*/
-
-    /*.section1 {*/
-    /*    max-height: 1000px;*/
-    /*}*/
-
-    /*.container-back {*/
-    /*    max-height: 2040px;*/
-    /*}*/
-
-    /*.homes {*/
-    /*    flex-wrap: wrap;*/
-    /*    !*justify-content: center;*!*/
-    /*    margin-top: 48px;*/
-    /*}*/
-
-    /*.container-blocks .text {*/
-    /*    margin-top: 12px;*/
-    /*}*/
-
-    /*.container-blocks .text-grey {*/
-    /*    margin: 12px 0;*/
-    /*}*/
-}
