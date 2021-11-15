@@ -166,11 +166,18 @@ body {
 }
 
 .city-label {
-    /*color: #000000;*/
     position: absolute;
     left: 24px;
-    top: -48px;
+    top: 22px;
     font-weight: 400;
+    color: #000000;
+    transition: 2s ease all;
+}
+
+.city-input:focus+.city-label,
+.city-input:not(:focus):valid+.city-label{
+    top: -48px;
+    color: #FFFFFF;
 }
 
 .calendar {
@@ -219,23 +226,36 @@ body {
 
 .calendar-before-date label {
     position: absolute;
-    top: -48px;
+    top: 20px;
     left: 20px;
-    color: #FFFFFF;
+    transition: 2s ease all;
 }
 
-.calendar-hyphen {
+.calendar-before-input:focus+.calendar-label-before,
+.calendar-before-input:not(:focus):valid+ .calendar-label-before {
     color: #FFFFFF;
-    position: absolute;
     top: -48px;
-    left: 98px;
 }
+
+/*.calendar-hyphen {*/
+/*    color: #FFFFFF;*/
+/*    position: absolute;*/
+/*    top: -48px;*/
+/*    left: 98px;*/
+/*}*/
 
 .calendar-after-date label {
     position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 2s ease all;
+}
+
+.calendar-after-input:focus+.calendar-label-after,
+.calendar-after-input:not(:focus):valid+.calendar-label-after {
+    color: #FFFFFF;
     top: -48px;
     left: -14px;
-    color: #FFFFFF;
 }
 
 .calendar-after-date {
@@ -262,10 +282,6 @@ body {
     border-color: #F5BD41;
 }
 
-.properties label {
-    display: none;
-}
-
 .properties input {
     width: 100%;
     height: 100%;
@@ -275,6 +291,33 @@ body {
 
 .properties div {
     height: 100%;
+    position: relative;
+}
+
+.properties label {
+    /*display: none;*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: 2s ease all;
+}
+
+.adults-input:focus+.adults-label,
+.adults-input:not(:focus):valid+.adults-label {
+    color: #FFFFFF;
+    top: -48px;
+}
+
+.children-input:focus+.children-label,
+.children-input:not(:focus):valid+.children-label {
+    color: #FFFFFF;
+    top: -48px;
+}
+
+.rooms-input:focus+.rooms-label,
+.rooms-input:not(:focus):valid+.rooms-label {
+    color: #FFFFFF;
+    top: -48px;
 }
 
 .search-button {
@@ -935,6 +978,13 @@ body {
         font-size: 15px;
     }
 
+    .city-input:focus+.city-label,
+    .city-input:not(:focus):valid+.city-label{
+        top: 10px;
+        color: #000000;
+        font-size: 12px;
+    }
+
     .city-field-button {
         display: block;
         position: absolute;
@@ -980,12 +1030,28 @@ body {
 
     .calendar-before-date label {
         color: #000000;
+        top: 24px;
+        left: 6px;
+        font-size: 15px;
+    }
+
+    .calendar-before-input:focus+.calendar-label-before,
+    .calendar-before-input:not(:focus):valid+ .calendar-label-before {
+        color: #000000;
         top: -2px;
         left: 6px;
         font-size: 12px;
     }
 
     .calendar-after-date label {
+        color: #000000;
+        top: 24px;
+        left: 6px;
+        font-size: 15px;
+    }
+
+    .calendar-after-input:focus+.calendar-label-after,
+    .calendar-after-input:not(:focus):valid+ .calendar-label-after {
         color: #000000;
         top: -2px;
         left: 6px;
@@ -1003,11 +1069,40 @@ body {
         background-color: #FFFFFF;
     }
 
+    /*.properties label {*/
+    /*    display: block;*/
+    /*    position: absolute;*/
+    /*    top: -2px;*/
+    /*    left: 6px;*/
+    /*}*/
+
     .properties label {
         display: block;
         position: absolute;
-        top: -2px;
+        top: 24px;
         left: 6px;
+        font-size: 15px;
+    }
+
+    .adults-input:focus+.adults-label,
+    .adults-input:not(:focus):valid+.adults-label {
+        color: #000000;
+        top: -2px;
+        font-size: 12px;
+    }
+
+    .children-input:focus+.children-label,
+    .children-input:not(:focus):valid+.children-label {
+        color: #000000;
+        top: -2px;
+        font-size: 12px;
+    }
+
+    .rooms-input:focus+.rooms-label,
+    .rooms-input:not(:focus):valid+.rooms-label {
+        color: #000000;
+        top: -2px;
+        font-size: 12px;
     }
 
     .properties:hover {
