@@ -45,7 +45,6 @@ body {
 }
 
 .triphouse{
-    /*padding: 51px 104px 0 104px;*/
     max-width: 1232px;
     display: flex;
     justify-content: space-between;
@@ -120,17 +119,6 @@ body {
     font-weight: 500;
 }
 
-.header-search {
-    margin: 145px 0 120px 0;
-    background-color: #F3F3F4;
-    display: flex;
-    border-radius: 8px;
-}
-
-.header-city {
-    margin-left: 14px;
-}
-
 .top-form {
     position: relative;
     border-radius: 8px;
@@ -142,7 +130,6 @@ body {
 
 .city-field {
     position: relative;
-    /*border: 3px solid #F3F3F4;*/
     height: 64px;
     border-radius: 8px;
     background: #FFFFFF;
@@ -152,7 +139,6 @@ body {
     height: 100%;
     min-width: 37.9%;
     outline: none;
-    /*border: none;*/
     border: 4px solid #F3F3F4;
     border-radius: 8px;
 }
@@ -180,6 +166,19 @@ body {
     color: #FFFFFF;
 }
 
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    max-height: 64px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    max-width: 765px;
+}
+
 .calendar {
     color: #000000;
     border: 4px solid #F3F3F4;
@@ -197,6 +196,10 @@ body {
     font-weight: 400;
 }
 
+.calendar:hover {
+    border-color: #F5BD41;
+}
+
 .calendar-before-date {
     position: relative;
     height: 100%;
@@ -206,18 +209,7 @@ body {
     border-color: #3077C6;
 }
 
-.calendar-after-date:hover {
-    border-color: #3077C6;
-}
-
 .calendar-before-input {
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border: none;
-}
-
-.calendar-after-input {
     width: 100%;
     height: 100%;
     outline: none;
@@ -244,11 +236,20 @@ body {
 /*    left: 98px;*/
 /*}*/
 
-.calendar-after-date label {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    transition: 2s ease all;
+.calendar-after-date {
+    height: 100%;
+    position: relative;
+}
+
+.calendar-after-date:hover {
+    border-color: #3077C6;
+}
+
+.calendar-after-input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
 }
 
 .calendar-after-input:focus+.calendar-label-after,
@@ -258,13 +259,11 @@ body {
     left: -14px;
 }
 
-.calendar-after-date {
-    height: 100%;
-    position: relative;
-}
-
-.calendar:hover {
-    border-color: #F5BD41;
+.calendar-after-date label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 2s ease all;
 }
 
 .properties {
@@ -295,7 +294,6 @@ body {
 }
 
 .properties label {
-    /*display: none;*/
     position: absolute;
     top: 20px;
     left: 20px;
@@ -329,19 +327,6 @@ body {
     color: #FFFFFF;
     height: 100%;
     width: 25%;
-}
-
-.button-container {
-    display: flex;
-    justify-content: flex-end;
-    max-height: 64px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    align-items: center;
-    width: 100%;
-    max-width: 765px;
 }
 
 .header-apps {
@@ -402,7 +387,6 @@ body {
     flex-direction: column;
     align-items: center;
     width: 25%;
-    /*padding-left: 16px;*/
 }
 
 .whatoffer-icon:nth-child(1) {
@@ -429,14 +413,16 @@ body {
     margin-bottom: 48px;
 }
 
-.block img {
-    margin-bottom: 48px;
-}
-
 .text {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 400;
+}
+
+.container-back {
+    background-color: #EAF0F9;
+    max-height: 828px;
+    margin: 0 auto;
 }
 
 .container {
@@ -451,16 +437,10 @@ body {
     width: 25%;
 }
 
-.container-back {
-    background-color: #EAF0F9;
-    max-height: 828px;
-    margin: 0 auto;
-}
-
 .homes {
     display: flex;
     justify-content: space-between;
-    margin-top: 104px ;
+    margin-top: 104px;
 }
 
 .container-blocks .text {
@@ -512,16 +492,11 @@ body {
     font-weight: 400;
 }
 
-.tabs.text {
-
-}
-
 .tabs-regions {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #3077C6;
-    /*min-width: 192px;*/
     min-height: 64px;
     width: 30.87%;
     border-radius: 8px;
@@ -533,7 +508,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #F3F3F4;
-    /*min-width: 192px;*/
     min-height: 64px;
     width: 30.87%;
     border-radius: 8px;
@@ -544,7 +518,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #F3F3F4;
-    /*min-width: 192px;*/
     min-height: 64px;
     width: 38.26%;
     border-radius: 8px;
@@ -581,14 +554,6 @@ body {
     left: -344px;
 }
 
-.regions-button {
-    width: 128px;
-    height: 48px;
-    position: absolute;
-    top: 122px;
-    left: 84px;
-}
-
 .maldives {
     position: relative;
 }
@@ -600,6 +565,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.reviews-sign_up {
+    display: flex;
+    flex-direction: column;
 }
 
 .sign_up {
@@ -624,7 +594,6 @@ body {
     background-color: #3077C6;
     fill: #FFFFFF;
     border-radius: 4px;
-    /*display: flex;*/
     align-items: center;
     display: none;
 }
@@ -653,7 +622,6 @@ body {
     position: absolute;
     right: 22px;
     top: 22px;
-    /*margin: 24px 24px 150px 599px;*/
 }
 
 .sign_up-install {
@@ -662,7 +630,6 @@ body {
     font-size: 14px;
     font-weight: 500;
     display: none;
-
 }
 
 .reviews {
@@ -676,7 +643,6 @@ body {
 }
 
 .reviews-section {
-    /*width: 400px;*/
     width: 33.333333%;
     height: 760px;
     background-color: #EAF0F9;
@@ -873,15 +839,6 @@ body {
     left: 40px;
 }
 
-.reviews-sign_up {
-    display: flex;
-    flex-direction: column;
-}
-
-/*.whatoffer-svg {*/
-/*    background-size: 70px;*/
-/*}*/
-
 [class*="col-"] {
     width: 100%;
 }
@@ -903,7 +860,6 @@ body {
 
     .row {
         flex-wrap: wrap;
-        /*justify-content: center;*/
         margin-top: 48px;
     }
 
@@ -1617,7 +1573,6 @@ body {
     }
 
     .reviews-sign_up {
-        /*max-width: 360px;*/
     }
 
     .reviews {
