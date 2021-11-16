@@ -558,6 +558,13 @@ body {
     position: relative;
 }
 
+.regions-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
 .dark {
     background-color: rgba(38, 38, 38, 0.4);
     width: 295px;
@@ -1084,7 +1091,7 @@ body {
     }
 
     .section1 {
-        max-height: 962px;
+        min-height: 962px;
     }
 
     .container-blocks:nth-child(3),
@@ -1096,10 +1103,6 @@ body {
     .regions-block:nth-child(3),
     .regions-block:nth-child(4) {
         display: none;
-    }
-
-    .regions-button {
-        left: 130px;
     }
 
     .footer-navigation ul :first-child {
@@ -1179,8 +1182,13 @@ body {
         margin-bottom: 40px;
     }
 
+    .header-apps div {
+        margin: 0 5px 0 11px;
+    }
+
     .header-page h1 {
         font-size: 30px;
+        line-height: 35px;
     }
 
     .triphouse-logo {
@@ -1537,6 +1545,10 @@ body {
         height: 178px;
     }
 
+    .regions-block:nth-child(2) {
+        display: block;
+    }
+
     .regions-block:nth-child(3) {
         display: none;
     }
@@ -1589,6 +1601,7 @@ body {
     .reviews-section {
         margin-top: 32px;
         height: auto;
+        width: 326px;
     }
 
     .reviews-image {
