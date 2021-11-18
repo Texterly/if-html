@@ -389,6 +389,7 @@
 @media screen and (max-width: 768px) {
   .header .header-background .header-page .top-form .city-field .button-container .calendar {
     width: 100%;
+    min-height: 58px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -767,6 +768,12 @@
     margin-top: 48px;
   }
 }
+@media screen and (max-width: 768px) {
+  .section1 .whatoffer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 480px) {
   .section1 .whatoffer .row {
     flex-direction: column;
@@ -814,6 +821,11 @@
   height: 92px;
   margin-bottom: 48px;
 }
+@media screen and (max-width: 768px) {
+  .section1 .whatoffer .row .block .whatoffer-icon:nth-child(1) {
+    margin-bottom: 16px;
+  }
+}
 @media screen and (max-width: 480px) {
   .section1 .whatoffer .row .block .whatoffer-icon:nth-child(1) {
     margin-bottom: 10px;
@@ -840,6 +852,11 @@
     width: 84%;
   }
 }
+@media screen and (max-width: 768px) {
+  .section1 .whatoffer .row .block .text {
+    white-space: nowrap;
+  }
+}
 @media screen and (max-width: 480px) {
   .section1 .whatoffer .row .block .text {
     font-size: 15px;
@@ -858,7 +875,7 @@
 }
 @media screen and (max-width: 1024px) {
   .container-back {
-    max-height: 1054px;
+    max-height: 1082px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -895,10 +912,15 @@
     margin-top: 48px;
   }
 }
+@media screen and (max-width: 768px) {
+  .container-back .section .container .homes {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 480px) {
   .container-back .section .container .homes {
     margin-top: 32px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 .container-back .section .container .homes .container-blocks {
@@ -909,6 +931,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
 }
 .container-back .section .container .homes .container-blocks .text {
@@ -1061,6 +1084,16 @@
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 768px) {
+  .dest .section .destinations .regions {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dest .section .destinations .regions {
+    justify-content: space-between;
+  }
+}
 .dest .section .destinations .regions .regions-block {
   width: 25%;
 }
@@ -1069,6 +1102,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1135,8 +1169,8 @@
 }
 @media screen and (max-width: 1024px) {
   .dest .section .destinations .regions .regions-block:last-child .regions-arrow {
-    left: -24px;
-    top: 380px;
+    left: -92px;
+    bottom: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1164,6 +1198,7 @@
   .dest .section .destinations .regions .regions-block .text {
     font-size: 12px;
     margin: 8px 0 40px 0;
+    align-self: flex-start;
   }
 }
 .reviews-sign_up {
@@ -1286,6 +1321,7 @@
   .reviews-sign_up .sign_up .sign_up-box .sign_up-install {
     display: block;
     align-self: center;
+    margin-left: 17px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1330,6 +1366,7 @@
 @media screen and (max-width: 1024px) {
   .reviews-sign_up .section .reviews .reviews-content .reviews-section {
     max-width: 400px;
+    width: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1446,12 +1483,6 @@
   display: flex;
 }
 @media screen and (max-width: 480px) {
-  .reviews-sign_up .section .reviews .reviews-content .reviews-section .person .person-text1 {
-    font-size: 15px;
-    margin: 14px 0 0 11px;
-  }
-}
-@media screen and (max-width: 480px) {
   .reviews-sign_up .section .reviews .reviews-content .reviews-section .person .person-text2 {
     font-size: 15px;
     margin: 0 0 0 12px;
@@ -1474,6 +1505,12 @@
   font-family: "Roboto", sans-serif;
   margin: 31px 0 0 6px;
 }
+@media screen and (max-width: 480px) {
+  .reviews-sign_up .section .reviews .reviews-content .reviews-section .person p:first-child {
+    font-size: 15px;
+    margin: 14px 0 0 11px;
+  }
+}
 .reviews-sign_up .section .reviews .reviews-content .reviews-section .person p:last-child {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -1491,7 +1528,7 @@
 @media screen and (max-width: 480px) {
   .reviews-sign_up .section .reviews .reviews-content .reviews-section .reviews-description {
     font-size: 15px;
-    margin: 22px 30px 0 2px;
+    margin: 14px 30px 0 2px;
     width: 327px;
   }
 }
@@ -1573,6 +1610,7 @@
 @media screen and (max-width: 768px) {
   .footer .footer-section .footer-navigation {
     max-height: 100px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1591,7 +1629,6 @@
 @media screen and (max-width: 768px) {
   .footer .footer-section .footer-navigation ul {
     padding: 0 0;
-    height: 50px;
     margin: 0 20px;
   }
 }
@@ -1628,6 +1665,12 @@
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer .footer-section .footer-navigation li:first-child {
+    display: block;
+    font-size: 15px;
+  }
+}
 .footer .footer-section .footer-navigation .about {
   width: 39.09%;
 }
@@ -1652,6 +1695,11 @@
   justify-content: space-between;
   height: 212px;
 }
+@media screen and (max-width: 480px) {
+  .footer .footer-section .footer-navigation .about ul {
+    height: 15px;
+  }
+}
 .footer .footer-section .footer-navigation .property {
   width: 39%;
 }
@@ -1675,6 +1723,17 @@
   flex-direction: column;
   justify-content: space-between;
   height: 310px;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-section .footer-navigation .property ul {
+    width: auto;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer .footer-section .footer-navigation .property ul {
+    height: 15px;
+  }
 }
 .footer .footer-section .footer-navigation .support {
   width: 21.89%;
@@ -1709,6 +1768,7 @@
 @media screen and (max-width: 480px) {
   .footer .footer-section .footer-navigation .support ul {
     width: auto;
+    height: 15px;
   }
 }
 .footer .footer-section .footer-navigation .footer-copyright {
